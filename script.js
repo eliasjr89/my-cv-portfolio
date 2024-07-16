@@ -12,7 +12,6 @@ function mostrarOcultarMenu(){
     }
 }
 
-// Ocultar menú cuando selecciono una opción
 let links = document.querySelectorAll("nav a");
 for(let x = 0; x < links.length; x++){
     links[x].onclick = function(){
@@ -30,7 +29,6 @@ function crearBarra(id_barra){
     }
 }
 
-// Creación de barras
 let html = document.getElementById("html");
 crearBarra(html);
 let javascript = document.getElementById("javascript");
@@ -48,7 +46,6 @@ crearBarra(git);
 let node = document.getElementById("node");
 crearBarra(node);
 
-// Arreglo para guardar cantidad de barras de cada barra de progreso
 let contadores = [-1, -1, -1, -1, -1, -1, -1, -1];
 let entro = false;
 
